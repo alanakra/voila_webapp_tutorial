@@ -1,9 +1,10 @@
 import streamlit as st
 
-st.title("Welcome Home!")
+st.title("Streamlit demo")
 st.write("This is a WebApp demo")
 a = st.number_input('How much do you love this demo?')
 st.write("Value: ", a)
+st.markdown('<style>h1 {color: blue}</style>', unsafe_allow_html=True)
 
 w = st.file_uploader("Upload a CSV file", type="csv")
 if w:
